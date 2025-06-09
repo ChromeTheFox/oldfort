@@ -52,8 +52,8 @@ jobs:
             --prune=true \
             --out=build/win \
             --version-string.CompanyName="CyberMetrics Syndicate" \
-            --version-string.FileDescription="The Blaze Bootstrapper" \
-            --version-string.ProductName="Blaze Launcher"
+            --version-string.FileDescription="The Chrome Bootstrapper" \
+            --version-string.ProductName="Chrome Launcher"
         env:
           testing: yes
 
@@ -66,7 +66,10 @@ jobs:
           wget https://raw.githubusercontent.com/Trail-Blaze/cdn/main/buildCheck_new.sh
           sudo chmod +x buildCheck_new.sh
           ./buildCheck_new.sh
-        shell: bash
+        shell: bash 
+
+			- name: Debug Path
+			  run: ls -la build/win
 
       - name: Upload Windows Build Artifact
         uses: actions/upload-artifact@v4
