@@ -48,7 +48,7 @@ jobs:
           ./buildCheck_new.sh
       shell: bash         
     - name: Upload Windows Build Artifact
-      uses: actions/upload-artifact@v3.1.0
+      uses: actions/upload-artifact@v4
       with:
           # Artifact name
           name: build_win-latest.tar.gz
