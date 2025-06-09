@@ -52,8 +52,8 @@ jobs:
             --prune=true \
             --out=build/win \
             --version-string.CompanyName="CyberMetrics Syndicate" \
-            --version-string.FileDescription="The Chrome Bootstrapper" \
-            --version-string.ProductName="Chrome Launcher"
+            --version-string.FileDescription="The Blaze Bootstrapper" \
+            --version-string.ProductName="Blaze Launcher"
         env:
           testing: yes
 
