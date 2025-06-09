@@ -73,3 +73,6 @@ jobs:
         with:
           name: build_win-launcher
           path: build/win/launcher
+
+      - name: List build output
+        run: ls -R build/win
